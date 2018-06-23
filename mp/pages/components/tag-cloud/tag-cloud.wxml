@@ -1,8 +1,10 @@
 <view>
   <view class='tag-cloud-box'>
-    topic words
+    Topic words: 
     <span wx:for="{{words}}" wx:key="{{item.word}}" class='tag'>
-      {{item.word}} {{item.score}}
+      <span class='word'>{{item.word}}</span>
+      <span class='score'>{{item.score}}</span>
+      <span class='exit'>×</span>
     </span>
   </view>
 </view>

@@ -1,10 +1,10 @@
-<view>
+<view class='ctr'>
   <view class='title'>
-  {{title}}
+    {{title}}
   </view>
 
   <view class='subtitle'>
-  {{subtitle}}
+    {{subtitle}}
   </view>
 
   <view class='inline-image'>

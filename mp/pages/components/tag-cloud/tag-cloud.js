@@ -8,7 +8,7 @@ const words = [
   {word: "hope", score: 5},
   {word: "my team", score: 5},
   {word: "surprising", score: 15},
-]
+];
 
 Component({
 

@@ -1,1 +1,18 @@
-/* pages/topic/topic.wxss */
+.ctr {
+  padding: 10px;
+  /*display: flex;*/
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+image {
+  width: 100%;
+}

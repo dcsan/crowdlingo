@@ -2,13 +2,19 @@
 
 const topicInfo = {
   'world-cup': {
-      title: "World Cup",
-      subtitle: "Lets talk about the world cup"
+    title: "World Cup",
+    subtitle: "Lets talk about the world cup",
+    image: {
+      src: "../../media/world-cup.jpg"
+    }
   },
-  nature: {
-    title: "Rhino",
-    subtitle: "is getting rare"
-  }
+  'nature': {
+    title: "Nature",
+    subtitle: "We love nature!",
+    image: {
+      src: "../../media/rhino.jpg"
+    }
+  },
 }
 
 Page({
