@@ -1,0 +1,11 @@
+/* pages/topicList/topicList.wxss */
+
+.h1 {
+  font-size: 36px;
+}
+
+.topic-item {
+  border: 1px solid #444;
+  font-size: 24px;
+  padding: 10px;
+}
