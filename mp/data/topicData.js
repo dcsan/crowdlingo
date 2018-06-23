@@ -18,16 +18,16 @@ const topicData = [
   },
   {
     cname: 'nature',
-    title: "Rhino",
-    subtitle: "is getting rare",
+    title: "Nature",
+    subtitle: "We love nature!",
     words: [
-      {word: "soccer", score: 10},
-      {word: "goal", score: 5},
-      {word: "score", score: 10},
-      {word: "winning", score: 5},
-      {word: "hope", score: 5},
-      {word: "my team", score: 5},
-      {word: "surprising", score: 15},
+      {word: "rhino", score: 5},
+      {word: "ivory", score: 15},
+      {word: "endangered", score: 10},
+      {word: "giraffe", score: 5},
+      {word: "safari", score: 15},
+      {word: "lion", score: 5},
+      {word: "species", score: 15},
     ],
     image: {
       src: 'rhino.jpg'

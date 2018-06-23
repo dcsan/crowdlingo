@@ -8,7 +8,6 @@
   </view>
 
   <view class='inline-image'>
-    image: {{topic.image.path}}
     <image src='{{topic.image.path}}' />
   </view>
 
