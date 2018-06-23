@@ -1,0 +1,17 @@
+<view>
+  <view class='topic-title'>
+  title
+  </view>
+
+  <view class='inline-image'>
+    <image src='...' />
+  </view>
+
+  <tag-cloud>
+  </tag-cloud>
+
+  <view>
+    words
+  </view>
+
+</view>

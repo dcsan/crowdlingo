@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+  	"tag-cloud": "../components/tag-cloud/tag-cloud"
+  }
+}
+
