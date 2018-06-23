@@ -1,1 +1,10 @@
 /* pages/topic/topic.wxss */
+
+.share-button {
+  font-size: 30px;
+  border-radius: 10px;
+  background: #0F0;
+  color: black;
+  padding: 10px;
+  
+}

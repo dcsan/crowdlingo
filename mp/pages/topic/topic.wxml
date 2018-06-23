@@ -19,4 +19,6 @@
     words
   </view>
 
+  <view class='share-button'>Share this your Group!</view>
+
 </view>
