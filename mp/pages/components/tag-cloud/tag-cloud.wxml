@@ -4,7 +4,9 @@
     <span wx:for="{{topic.words}}" wx:key="{{item.word}}" class='tag' bindtap='exit'>
       <span class='word'>{{item.word}}</span>
       <span class='score'>{{item.score}}</span>
-      <span class='exit' data-isexit='yep'>×</span>
+      <span class='exit' data-isexit='yep'><span class='x'>×</span></span>
     </span>
+    <input class='input' type="text" placeholder='Add a tag'>
+    </input>
   </view>
 </view>

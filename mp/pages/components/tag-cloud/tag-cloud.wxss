@@ -8,13 +8,13 @@
 
 .tag {
   font-size: 14px;
-  padding: 5px;
+  padding: 0 5px;
   border: 1px solid #666;
   border-radius: 10px;
   line-height: 30px;
-  display: inline;  
+  display: inline-block;  
   background: white;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .score {
@@ -24,18 +24,31 @@
   content: '('
 }
 .score::after {
-  content: ' pts)'
+  content: ')'
 }
 
 .exit {
   border-radius: 50%;
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   background: red;
   color: #eee;
+  text-align: center;
+  position: relative;
+}
+
+.x {
+  position: absolute;
+  left: 2px;
+  top: -8px;
 }
 
 .hidden {
   display: none;
+}
+
+.input {
+  background: rgba(255,255,255,0.3);
+  padding: 5px;
 }
