@@ -35,6 +35,12 @@ Component({
       wx.switchTab({
         url: '/pages/tbot/profile/profile'
       })
+    },
+
+    exit(e) {
+      if (e.target.dataset.isexit === 'yep') {
+
+      };
     }
   },
 
@@ -59,4 +65,4 @@ Component({
     console.log('tag-cloud.ready.data', this.data)
   }
 
-})
+});

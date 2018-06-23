@@ -35,3 +35,7 @@
   background: red;
   color: #eee;
 }
+
+.hidden {
+  display: none;
+}

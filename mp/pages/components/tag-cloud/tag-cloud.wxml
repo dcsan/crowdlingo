@@ -1,10 +1,10 @@
 <view>
   <view class='tag-cloud-box'>
     Topic words: 
-    <span wx:for="{{topic.words}}" wx:key="{{item.word}}" class='tag'>
+    <span wx:for="{{topic.words}}" wx:key="{{item.word}}" class='tag' bindtap='exit'>
       <span class='word'>{{item.word}}</span>
       <span class='score'>{{item.score}}</span>
-      <span class='exit'>×</span>
+      <span class='exit' data-isexit='yep'>×</span>
     </span>
   </view>
 </view>
