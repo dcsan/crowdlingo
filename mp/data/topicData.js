@@ -2,7 +2,7 @@ const topicData = [
   {
     cname: 'world-cup',
     title: "World Cup",
-    subtitle: "Lets talk about the world cup",
+    subtitle: "Let's talk about the world cup!",
     words: [
       {word: "soccer", score: 10},
       {word: "goal", score: 5},

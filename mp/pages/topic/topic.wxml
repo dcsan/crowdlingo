@@ -14,17 +14,12 @@
   <tag-cloud topic="{{topic}}">
   </tag-cloud>
 
-  <view>
-    words
-  </view>
-
-
   <view class='share-button'>
     <view bindtap="onShareAppMessage" class='btn-row' >
       <button
-        class='zat-btn row-btn fill-btn left-align'
+        class='sharebtn zat-btn row-btn fill-btn left-align'
         open-type="share" type="primary">
-        Share this your Group!
+        Share this with your Group!
       </button>
     </view>
   </view>

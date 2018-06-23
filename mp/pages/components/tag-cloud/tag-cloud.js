@@ -39,7 +39,7 @@ Component({
 
     exit(e) {
       if (e.target.dataset.isexit === 'yep') {
-
+        
       };
     }
   },
