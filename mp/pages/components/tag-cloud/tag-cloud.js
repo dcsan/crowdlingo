@@ -1,9 +1,13 @@
 // components/tag-cloud.js
 
 const words = [
-  {word: "one", score: 10},
-  {word: "two", score: 5},
-  {word: "three", score: 10}
+  {word: "soccer", score: 10},
+  {word: "goal", score: 5},
+  {word: "score", score: 10},
+  {word: "winning", score: 5},
+  {word: "hope", score: 5},
+  {word: "my team", score: 5},
+  {word: "surprising", score: 15},
 ]
 
 Component({

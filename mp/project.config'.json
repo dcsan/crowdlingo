@@ -35,10 +35,16 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "topic",
+					"id": 0,
+					"name": "topic=world-cup",
 					"pathName": "pages/topic/topic",
 					"query": "cname=world-cup"
+				},
+				{
+					"id": 1,
+					"name": "topic=nature",
+					"pathName": "pages/topic/topic",
+					"query": "cname=nature"
 				}
 			]
 		}
