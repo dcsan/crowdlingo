@@ -30,7 +30,7 @@ const topicData = [
       {word: "surprising", score: 15},
     ],
     image: {
-      src: 'world-cup.jpg'
+      src: 'rhino.jpg'
     }
   }
 
