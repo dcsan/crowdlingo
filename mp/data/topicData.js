@@ -13,7 +13,7 @@ const topicData = [
       {word: "surprising", score: 15},
     ],
     image: {
-      src: '/media/world-cup.jpg'
+      src: 'world-cup.jpg'
     }
   },
   {
@@ -30,7 +30,7 @@ const topicData = [
       {word: "surprising", score: 15},
     ],
     image: {
-      src: '/media/world-cup.jpg'
+      src: 'world-cup.jpg'
     }
   }
 

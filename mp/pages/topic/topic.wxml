@@ -8,10 +8,11 @@
   </view>
 
   <view class='inline-image'>
-    <image src='{{image.src}}' />
+    image: {{topic.image.path}}
+    <image src='{{topic.image.path}}' />
   </view>
 
-  <tag-cloud topic="{{oneTopic}}">
+  <tag-cloud topic="{{topic}}">
   </tag-cloud>
 
   <view>

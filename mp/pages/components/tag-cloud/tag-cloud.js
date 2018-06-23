@@ -41,12 +41,13 @@ Component({
   // call once when mounted
   // but the page will need to update
   attached: function(evt) {
+    // let words = this.data.topic.words
     console.log('tag-cloud attached', evt)
     // debugger
-    console.log('this', this.data)
-    this.setData({
-      words: words
-    })
+    console.log('attached.data', this.data)
+    // this.setData({
+    //   words: words
+    // })
     // let userVars = UserVars.get()
     // this.setData({
     //   coins: userVars.coins,

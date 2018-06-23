@@ -1,14 +1,17 @@
 // pages/topic/topic.js
 
-const topicInfo = require('./topicData.js')
+const topicData = require('../../data/topicData.js')
 
 Page({
 
   onLoad: function (options) {
     console.log("options", options)
-    let oneTopic = topicInfo.find( t => t.cname === options.cname)
-    console.log("oneTopic", oneTopic)
-    this.setData(oneTopic)
+    let topic = topicData.find( t => t.cname === options.cname)
+    if (topic.image) {
+      topic.image.path = "/data/" + topic.image.src
+    }
+    console.log("topic", topic)
+    this.setData({topic})
   },
 
   onReady: function () {

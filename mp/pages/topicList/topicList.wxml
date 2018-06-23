@@ -1,0 +1,13 @@
+<view>
+
+  <view class='h1'>TopicList</view>
+
+  <view wx:for="{{topicData}}" 
+    wx:key="{{item.cname}}" 
+    bindtap='goTopic'
+    data-topic="{{item}}"
+    class='topic-item'>
+  {{item.title}}
+  </view>
+
+</view>
