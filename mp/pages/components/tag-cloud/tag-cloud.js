@@ -16,7 +16,7 @@ Component({
   },
 
   properties: {
-    words: {
+    topic: {
       type: Object
     }
   },
@@ -55,7 +55,7 @@ Component({
   },
 
   ready() {
-    console.log('st bar.ready.data', this.data)
+    console.log('tag-cloud.ready.data', this.data)
   }
 
 })

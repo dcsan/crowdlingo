@@ -11,7 +11,7 @@
     <image src='{{image.src}}' />
   </view>
 
-  <tag-cloud>
+  <tag-cloud topic="{{oneTopic}}">
   </tag-cloud>
 
   <view>

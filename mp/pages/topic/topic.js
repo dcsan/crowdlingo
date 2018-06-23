@@ -1,36 +1,20 @@
 // pages/topic/topic.js
 
-const topicInfo = {
-  'world-cup': {
-      title: "World Cup",
-      subtitle: "Lets talk about the world cup"
-  },
-  nature: {
-    title: "Rhino",
-    subtitle: "is getting rare"
-  }
-}
+const topicInfo = require('./topicData.js')
 
 Page({
 
   onLoad: function (options) {
     console.log("options", options)
-    let thisTopic = topicInfo[options.cname]
-    console.log("thisTopic", thisTopic)
-    let data = {
-      image: {
-        src: '/media/world-cup.jpg'
-      }
-    }
-    this.setData(thisTopic)
+    let oneTopic = topicInfo.find( t => t.cname === options.cname)
+    console.log("oneTopic", oneTopic)
+    this.setData(oneTopic)
   },
 
   onReady: function () {
-  
   },
 
   onShow: function () {
-  
   },
 
   onHide: function () {  
@@ -42,8 +26,7 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-  
+  onPullDownRefresh: function () {  
   },
 
   /**
