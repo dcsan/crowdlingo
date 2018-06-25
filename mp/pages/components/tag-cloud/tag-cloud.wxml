@@ -1,12 +1,14 @@
 <view>
   <view class='tag-cloud-box'>
     Topic words: 
-    <span wx:for="{{topic.words}}" wx:key="{{item.word}}" class='tag' bindtap='exit'>
+    <span wx:for="{{topic.words}}" wx:key="{{item.word}}" class='tag' bindtap='removeTag' data-item="{{item}}">
       <span class='word'>{{item.word}}</span>
       <span class='score'>{{item.score}}</span>
-      <span class='exit' data-isexit='yep'><span class='x'>×</span></span>
+      <span class='exit' data-isexit='yep'>
+        <span class='x'>×</span>
+      </span>
     </span>
-    <input class='input' type="text" placeholder='Add a tag'>
+    <input class='input' type="text" placeholder='Add a word!'>
     </input>
   </view>
 </view>

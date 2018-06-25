@@ -1,14 +1,3 @@
-// components/tag-cloud.js
-
-// const words = [
-//   {word: "soccer", score: 10},
-//   {word: "goal", score: 5},
-//   {word: "score", score: 10},
-//   {word: "winning", score: 5},
-//   {word: "hope", score: 5},
-//   {word: "my team", score: 5},
-//   {word: "surprising", score: 15},
-// ];
 
 Component({
 
@@ -37,11 +26,24 @@ Component({
       })
     },
 
-    exit(e) {
-      if (e.target.dataset.isexit === 'yep') {
-        
-      };
+    removeTag(e) {
+      let item = e.currentTarget.dataset.item
+      let words = this.data.topic.words.filter( w => w.word !== item.word)
+      this.setData({
+        'topic.words': words
+      })
+    },
+
+    // TODO pull from text field.value ?
+    addTag(e) {
+      let word = "new word"
+      let words = this.data.topic.words
+      words.push(word)
+      this.setData({
+        'topic.words': words
+      })
     }
+
   },
 
   // call once when mounted

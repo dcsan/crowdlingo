@@ -10,4 +10,9 @@
   {{item.title}}
   </view>
 
+  <view>more...</view>
+  <view class='topic-item'>
+  Suggest a topic!
+  </view>
+
 </view>
