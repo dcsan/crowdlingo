@@ -358,4 +358,13 @@ function init() {
   console.log("topic.vocab", topic.vocab)
 }
 
+function testFile() {
+  fetch('::/data/topics.md')
+    .then(response => response.text())
+    .then(text => console.log(text))
+}
+
+// testFile()
 init()
+
+
