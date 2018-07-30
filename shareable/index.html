@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IELTS Speaking</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=format-detection content="telephone=no">
+    <meta name=msapplication-tap-highlight content=no>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link href=styles.css rel=stylesheet>
+
+    <script src="./js/vendor/vue.js" ></script>
+    <script src="./js/vendor/underscore-min.js" ></script>
+
+  </head>
+
+<body>
+
+  <div id="app">
+    <img
+      class="poster"
+      style="width: 100vw;"
+      :src="topic.image"
+    />
+
+    <div class="category">
+      {{topic.category}}
+    </div>
+
+    <div class='content'>
+
+      <div class="prompt">
+        {{topic.prompt}}
+      </div>
+
+      <div class="section">
+        <div class="sect-head">Hints</div>
+        <div
+          v-for="hint in topic.hints"
+          class="hint-box"
+        >
+          <span class="hint-q">
+            {{ hint.q }}
+          </span>
+          <div class="tag-box">
+            <span
+              class="tag"
+              v-for="a in hint.a"
+            >{{a}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sect-head">
+          Vocabulary
+        </div>
+        <span
+          v-for="word in topic.vocab"
+          class="tag"
+        >{{word}}</span>
+      </div>
+
+      <div class="section">
+        <div class="sect-head">
+          Patterns
+        </div>
+        <span
+          v-for="word in topic.patterns"
+          class="tag"
+        >{{word}}</span>
+      </div>
+
+      <div class="section" @click='expand'>
+        <div class="sect-head">
+          Expansion
+        </div>
+        {{topic.expansion}}
+      </div>
+
+      <div class="section">
+        <div class="sect-head">
+          Model answers
+        </div>
+
+        <div
+          v-for="answer, idx in topic.answers"
+          id=answer
+          class='tag clickable'
+          @click='pickAnswer(idx)'
+        >
+          <img class='cta-icon' src='./images/ux/right-circular-64.png'></img>
+          {{answer.keyword}}
+        </div>
+
+        <div class='answer'>
+          <span class='tag'>
+            {{topic.answer.keyword}}
+          </span>
+          {{topic.answer.text}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="./js/topics.js" ></script>
+
+</html>

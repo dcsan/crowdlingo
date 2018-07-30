@@ -1,0 +1,42 @@
+env:
+  browser: true
+  es6: true
+extends: 'eslint:recommended'
+parserOptions:
+  sourceType: module
+  # ecmaVersion: 2018
+  # ecmaVersion: 2017
+  ecmaVersion: 8
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    spread: true
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  semi:
+    - error
+    - never
+  no-console:
+    - off
+  no-debugger:
+    - off
+  no-unused-vars:
+    - 2
+    - vars: local
+      args: none
+globals:
+  Page: true
+  require: true
+  module: true
+  wx: true
+  App: true
+  getApp: true
+  Component: true
+  Behavior: true
+  getCurrentPages: true
+  Vue: true
+  _: true
