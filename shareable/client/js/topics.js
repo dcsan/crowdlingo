@@ -2,6 +2,83 @@ const log = console.log
 
 let topics = [
 
+
+    {
+      category: "Friends",
+      cname: "hangout",
+      prompt: "Hangout with friends",
+      type: "describe",
+      image: "images/hangout.jpg",
+
+      hints: [
+        {
+          q: "How often do you like to hang out with friends?",
+          a: [
+            "I hang out with my friends from time to time.",
+          ]
+        },
+        {
+          q: "Who do you usually like to hang out with?",
+          a: [
+            "Usually I like to hang out with one of my close friends.",
+          ]
+        },
+        {
+          q: "Where do you like to go when you hang out with your friends?",
+          a: [
+            "Well, that depends. Sometimes we go to a restaurant to enjoy tasty food if someone knows a decent place.",
+          ]
+        },
+        {
+          q: "Do you like to go out with a big group or just few friends?",
+          a: [
+            "Well, if I had to choose between the two, I would go with hanging out with a big group people because I feel that I am an extrovert.",
+          ]
+        },
+      ],
+
+      vocab: [
+        "hangout",
+        "Thirsty Thursday",
+      ],
+
+      patterns: [
+        "actually",
+        "often", "usually", "recently", "seldom", "occasionally",
+        "I enjoy ", "I like to",
+        "I take part in ",
+        "however", "on the other hand",
+      ],
+
+      expansions: [
+        "How long have been the last hangout?",
+        "What do you do for hangout?",
+        "What's average time for one hangout?",
+        "What day you usually hangout?",
+      ],
+      expansion: "",
+
+      answers: [
+        {
+          keyword: "where",
+          text: "Well, that depends. Sometimes we go to a restaurant to enjoy tasty food if someone knows a decent place. ",
+        },
+        {
+          keyword: "when",
+          text: "I always hang out with my classmate on thirsty Thursday!"
+        },
+        {
+          keyword: "what",
+          text: "Well, that depends. Sometimes we go to a restaurant to enjoy tasty food if someone knows a decent place."
+        },
+      ],
+      answer: ""
+
+    },
+
+
+
+
   // parents
   {
     category: "parents",
@@ -66,6 +143,7 @@ let topics = [
     ]
   },
 
+//free-time
   {
     category: "Free Time",
     cname: "free-time",
@@ -366,5 +444,3 @@ function testFile() {
 
 // testFile()
 init()
-
-
