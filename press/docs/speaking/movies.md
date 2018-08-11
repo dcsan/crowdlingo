@@ -1,5 +1,6 @@
 ---
-title: What kind of movies do you like?
+title: Movies
+description: What kind of movies do you like?
 cname: movies
 vocab:
   - genre

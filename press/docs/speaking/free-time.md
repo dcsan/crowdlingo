@@ -1,5 +1,6 @@
 ---
-title: What do you do in your free time?
+title: Free time
+description: What do you like to do in your Free Time?
 ---
 
 # Free Time

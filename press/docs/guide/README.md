@@ -37,5 +37,5 @@ Vocab metadata
 
 ## Custom components
 
-<vocab-box>
-</vocab-box>
+<toc-box section="speaking">
+</toc-box>
